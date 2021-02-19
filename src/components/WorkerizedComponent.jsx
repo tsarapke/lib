@@ -7,6 +7,10 @@ export default function WorkerizedComponent() {
         worker.addEventListener('message', (data) => {
             console.log(data);
         })
+
+        worker.postMessage();
+
+        worker.terminate();
     }, []);
 
     return (
