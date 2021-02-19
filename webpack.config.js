@@ -9,6 +9,7 @@ module.exports = {
     libraryTarget: 'umd',
     filename: 'index.js',
   },
+  devtool:'nosources-source-map',
   externals: {
     react: {
       commonjs: 'react',
